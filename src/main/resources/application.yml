@@ -1,0 +1,35 @@
+#spring:
+#  cloud:
+#    consul:
+#      host: 192.168.1.131
+#      port: 8500
+#      discovery:
+#        prefer-ip-address: true
+#        #healthCheckPath: ${management.contextPath}/health
+#        healthCheckPath: /health
+#        healthCheckInterval: 15s
+#        instance-id: consul1
+#        enabled: true
+#      enabled: true
+#    application:
+#      name: hle-connect
+#server:
+#  port: 8500
+#  logging:
+#    file: mylogs.log
+#    path: D:/Haileer/mylogs
+
+server:
+  port: 8500
+#logging:
+#  file: mylogs.log
+#  path:  haileerlog/mylogs
+spring:
+  application:
+    name: netty-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://39.100.200.250:8833/eureka
+#      defaultZone: http://192.168.1.114:8833/eureka
+
